@@ -30,9 +30,16 @@ with st.form("user inputs"):
     tone=st.text_input("complex Level of questions",max_chars=20, placeholder="Simple")
     #add button
     button=st.form_submit_button("Create MCQs")
-
+    
+    print(f"button: {button}" )
+    print(f"uploaded_file: {uploaded_file}" )
+    print(f"subject: {subject}" )
+    print(f"tone: {tone}" )
+    print(f"mcq count: {mcq_count}" )
+    
     if button and uploaded_file is not None and mcq_count and subject and tone:
         with st.spinner("loading...."):
+            print("I am here")
             try:
                 text=read_file(uploaded_file)
                 #count token and cost of API call

@@ -7,7 +7,7 @@ import pandas as pd
 from src.mcqgenerator.logger import logging
 from src.mcqgenerator.utils import read_file,get_table_data
 from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
-from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI 
 #from langchain_community.chat_models import ChatOpenAI
 from langchain_community.callbacks import get_openai_callback
 
